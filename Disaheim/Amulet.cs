@@ -33,7 +33,7 @@ namespace Disaheim
 
         public override string ToString()
         {
-            return $"itenId: {ItemId}, Quality: {Quality}, Design: {Design}";
+            return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
 
 
