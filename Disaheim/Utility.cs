@@ -18,7 +18,7 @@ namespace Disaheim
         {
 
             
-               if (amulet.Quality == Level.Low)
+               if (amulet.Quality == Level.Low) //man laver en if statement for at få retuneret den værdi der passer til qualiteten
                 {
                     return 12.5;
                 }
