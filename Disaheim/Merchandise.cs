@@ -10,10 +10,12 @@ namespace Disaheim
     {
         public string ItemId;
 
-        public Merchandise(string itemID)
-            { ItemId = itemID; }
-
-        
+       
+        /*public Merchandise(string itemId) // 
+        {
+            ItemId = itemId;
+        }
+        */
 
         public override string ToString()
         {

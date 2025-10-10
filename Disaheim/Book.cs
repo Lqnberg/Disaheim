@@ -22,7 +22,7 @@ namespace Disaheim
             this (itemId, title, 0)
         {
         }
-        public Book(string itemId, string title, double price) : base(itemId)
+        public Book(string itemId, string title, double price) //: base(itemId)
         {
             ItemId = itemId;
             Title = title;

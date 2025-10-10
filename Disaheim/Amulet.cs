@@ -14,7 +14,7 @@ namespace Disaheim
 
 
 
-        public Amulet(string itemId) : this(itemId, Level.Medium, "")
+        public Amulet(string itemId) : this (itemId, Level.Medium, "")
         {
         }
 
@@ -22,7 +22,7 @@ namespace Disaheim
         {
         }
 
-        public Amulet(string itemId, Level quality, string design) : base(itemId)
+        public Amulet(string itemId, Level quality, string design) //: base(itemId)
         {
             ItemId = itemId;
             Design = design;
