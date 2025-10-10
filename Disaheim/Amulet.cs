@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId;
+        //public string ItemId; // Dette er arvet fra Merchandise // flyttet til overclass Merchandise
         public string Design;
         public Level Quality;
 
 
 
-        public Amulet(string itemId) :
-        this (itemId, Level.Medium, "")
+        public Amulet(string itemId) : this(itemId, Level.Medium, "")
         {
         }
 
-        public Amulet(string itemId, Level quality) : //dette er en constructor
-        this (itemId, quality, "")
+        public Amulet(string itemId, Level quality) : this (itemId, quality, "")  //dette er en constructor
         {
         }
 
-        public Amulet(string itemId, Level quality, string design)
+        public Amulet(string itemId, Level quality, string design) : base(itemId)
         {
             ItemId = itemId;
             Design = design;
@@ -41,22 +39,3 @@ namespace Disaheim
     }
 }
 
-
-
-
-/*public Account (string inName, string inAddress, 
-decimal inBalance)  
-{ 
-name = inName; 
-address = inAddress; 
-balance = inBalance; 
-} 
-public Account ( string inName, string inAddress ) : 
-this (inName, inAddress, 0 ) 
-{ 
-} 
-public Account ( string inName ) :  
-this (inName, "Not Supplied", 0 )  
-{ 
-}
-*/

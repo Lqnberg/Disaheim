@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId;
+        //public string ItemId;  // Dette er arvet fra Merchandise // flyttet til overclass Merchandise
         public string Title;
         public double Price;
 
@@ -22,7 +22,7 @@ namespace Disaheim
             this (itemId, title, 0)
         {
         }
-        public Book(string itemId, string title, double price)
+        public Book(string itemId, string title, double price) : base(itemId)
         {
             ItemId = itemId;
             Title = title;
